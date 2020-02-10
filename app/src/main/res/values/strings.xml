@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project2</string>
+    <string name="start_locator">Start Locator</string>
+    <string name="location_app">Location App</string>
+    <string name="stop_locator">Stop Locator</string>
+    <string name="database">Database</string>
+</resources>
