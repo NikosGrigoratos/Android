@@ -37,13 +37,11 @@ public class MyProvider extends ContentProvider {
 
     @Override
     public Uri insert(Uri uri, ContentValues values) {
-        System.out.println("CONTENT RESOLVER HERE");
         long id = -1;
         SQLiteDatabase mDB = mDBHelper.getWritableDatabase();
         switch(sUriMatcher.match(uri)){
             case 1:
                 id = mDB.insert(mDBHelper.TABLE_NAME, null, values);
-                System.out.println("INSERT QUERY HERE HERE");
                 break;
             default:
                 throw new IllegalArgumentException ("Content URI pattern not recognizable: "+uri);

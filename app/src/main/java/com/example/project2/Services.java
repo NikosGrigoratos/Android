@@ -91,7 +91,6 @@ public class Services extends Service {
     public void onCreate() {
 
         contentResolver = this.getContentResolver();
-        System.out.println("CONTENT RESOLVER CREATED");
         Log.e(TAG, "onCreate");
         initializeLocationManager();
         try {
